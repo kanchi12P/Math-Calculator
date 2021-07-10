@@ -13,7 +13,7 @@ function Input(props){
         props.plot(graph);
         setGraph("");
     }
-    return(<form>
+    return(<form className="form">
         <label>Enter graph: </label>
    <input type="text" name="func" onChange={graphChange} value={graph}></input>
    <input type="submit" value="Plot" onClick={transfer}></input>

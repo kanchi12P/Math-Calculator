@@ -7,7 +7,10 @@ function App(){
      setGraph(funct);
      console.log(graphplot);
   }
-  return(<div><Input plot={graphProp}></Input><Graph graphToPlot={graphplot}/></div>);
+  return(<div >
+  <div className="sidebar"><Input plot={graphProp}></Input></div>
+  <div className="content-1"><Graph graphToPlot={graphplot}/></div>
+  </div>);
 }
 
 
