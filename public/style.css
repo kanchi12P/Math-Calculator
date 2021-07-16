@@ -28,7 +28,7 @@
   /* OTHER STYLES */
   
   body {
-    background-color:#ecc6d8;
+    background-color:#94b8b8;
     display: flex;
     justify-content: center;
     padding: 20px;
@@ -55,14 +55,15 @@
   }
   
   .sidebar {
-    background-image: linear-gradient(203deg, #3EDFD7 0%, #29A49D 90%)
+    background-image: linear-gradient(203deg, #3c4747 0%, #459793 90%)
   }
   
   .content-1,
   .content-2,
   .content-3 {
     background-image: linear-gradient(130deg, #6C52D9 0%, #1EAAFC 85%, #3EDFD7 100%);
-   
+    
+
   }
   .form{
       font-family:cursive;
