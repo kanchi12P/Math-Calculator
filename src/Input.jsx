@@ -27,7 +27,7 @@ const re = /(?:(?:^|[-+_*/])(?:\s*-?\d+(\.\d+)?(?:[eE][+-]?\d+)?\s*))+$/;
     <input type="text" name="func" onChange={graphChange} value={graph}></input>
     <input type="submit" value="Plot" onClick={transfer}></input>
 
-    <div> {re.test(exp) ?  <h1>{eval(exp)}</h1> : <h1>function</h1> }</div>
+    <div> {re.test(exp) ?  <h1>{eval(exp)}</h1> : null }</div>
 
     </form>);
 

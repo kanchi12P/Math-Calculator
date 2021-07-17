@@ -5,7 +5,7 @@ import ErrorBoundary from "./ErrorBoundary";
 import Nav from "./Navbar"
 
 function App(){
-  const[graphplot,setGraph]=useState("x");
+  const[graphplot,setGraph]=useState("0");
   function graphProp(funct) {
      setGraph(funct);
      console.log(graphplot);
