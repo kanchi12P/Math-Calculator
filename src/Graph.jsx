@@ -11,7 +11,7 @@ function Graph(props){
         data: [{
           fn:props.graphToPlot, 
           color: 'red'
-       }],
+        }],
         grid: true,
         yAxis: {domain: [-1, 1]},
         xAxis: {domain: [-4, 4]}
