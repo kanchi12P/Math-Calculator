@@ -11,7 +11,9 @@ function Input(props){
         
     }
 const re = /(?:(?:^|[-+_*/])(?:\s*-?\d+(\.\d+)?(?:[eE][+-]?\d+)?\s*))+$/;
-
+const rep=/\b(sin|cos|tan)\b/;
+const reu=/[a-z]/;
+const x=/\b(x)\b/;
 
     function transfer(event){
     
@@ -21,13 +23,28 @@ const re = /(?:(?:^|[-+_*/])(?:\s*-?\d+(\.\d+)?(?:[eE][+-]?\d+)?\s*))+$/;
         setExp(graph);
         
     }
-    
+    function checktrigno(exp){
+        
+        if(x.test(exp)==true)
+            checkmath(exp);
+            else{
+        if(rep.test(exp)==true)
+        return (<h1>{evaluate(exp)}</h1>);
+        }
+        
+    }
+    function checkmath(exp){
+        if(re.test(exp))
+        return (<h1>{evaluate(exp)}</h1>) ; 
+    }
+
+    //<div> {re.test(exp) ?  <h1>{evaluate(exp)}</h1> : null }</div>
     return(<form className="form">
     <label>Enter graph: </label>
     <input type="text" name="func" onChange={graphChange} value={graph}></input>
     <input type="submit" value="Plot" onClick={transfer}></input>
-
-    <div> {re.test(exp) ?  <h1>{eval(exp)}</h1> : null }</div>
+    <div> {reu.test(exp) ?  checktrigno(exp) : checkmath(exp)  }</div>
+    
 
     </form>);
 
