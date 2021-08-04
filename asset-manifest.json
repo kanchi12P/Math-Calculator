@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.js": "/Math-Calculator/static/js/main.105363eb.chunk.js",
+    "main.js.map": "/Math-Calculator/static/js/main.105363eb.chunk.js.map",
+    "runtime-main.js": "/Math-Calculator/static/js/runtime-main.0c96d6d3.js",
+    "runtime-main.js.map": "/Math-Calculator/static/js/runtime-main.0c96d6d3.js.map",
+    "static/js/2.d8712c05.chunk.js": "/Math-Calculator/static/js/2.d8712c05.chunk.js",
+    "static/js/2.d8712c05.chunk.js.map": "/Math-Calculator/static/js/2.d8712c05.chunk.js.map",
+    "index.html": "/Math-Calculator/index.html",
+    "static/js/2.d8712c05.chunk.js.LICENSE.txt": "/Math-Calculator/static/js/2.d8712c05.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0c96d6d3.js",
+    "static/js/2.d8712c05.chunk.js",
+    "static/js/main.105363eb.chunk.js"
+  ]
+}
