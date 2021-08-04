@@ -25,11 +25,9 @@ const x=/\b(x)\b/;
     }
     function checktrigno(exp){
         
-        if(x.test(exp)==true)
-            checkmath(exp);
-            else{
+        if(x.test(exp)==false){
         if(rep.test(exp)==true)
-        return (<h1>{evaluate(exp)}</h1>);
+        checkmath(exp);
         }
         
     }
